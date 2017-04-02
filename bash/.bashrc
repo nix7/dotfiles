@@ -4,9 +4,15 @@
 
 #tux text bubble
 figlet "Linux Master Race"| cowsay -f tux -n
+
+#aliases
 alias naut="nautilus --no-desktop  &> /dev/null &"
 alias andr="/home/nix/.local/share/umake/android/android-studio/bin/studio.sh  &> /dev/null &" %f
 alias chr="/usr/lib/chromium-browser/chromium-browser --incognito &> /dev/null &"
+
+#Android
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 # If not running interactively, don't do anything
 case $- in
