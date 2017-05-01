@@ -1,11 +1,8 @@
 set number
-syntax on
-inoremap jj <ESC>
-colorscheme molokai
-
+set relativenumber
+syntax on 
 noremap <C-e> :NERDTreeToggle<CR>
-
-
+inoremap jj <ESC> 
 "Syntastic settings
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
